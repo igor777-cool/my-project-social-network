@@ -1,0 +1,6 @@
+Var dog = {
+	name: "Oladushek"
+	legs: 4,
+	isAwesome: true
+	};
+	
