@@ -1,5 +1,5 @@
 import React from 'react';
-import s from'./Navbar.module.css';
+import s from './Navbar.module.css';
 console.log(s)
 // let s = {
 //     'item': 'Navbar_item__22Hz1',
