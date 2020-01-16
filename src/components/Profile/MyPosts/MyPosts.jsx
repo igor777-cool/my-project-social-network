@@ -1,19 +1,35 @@
 import React from 'react';
 import s from './MyPosts.module.css';
-import Post from './Post/Post.jsx'
-
-const MyPosts = () => {
+import Post from './Post/Post.jsx';
+import ProfileInfo from "../ProfileInfo/ProfileInfo";
+const Profile = () => {
     return (
         <div>
-            My posts
+            <ProfileInfo/>
+        </div>
+    )
+}
 
-            <div>
-                <textarea></textarea>
-                <button>Add post</button>
+const MyPosts = () => {
+    let postData = [
+        {id: 0, message: 'Hi! How are you?', likesCount: 15},
+        {id: 1, message: 'Hello!', likesCount: 25},
+        {id: 2, message: 'Hello!', likesCount: 55},
+        {id: 3, message: 'Hello!', likesCount: 25},
+        ];
+    return (
+        <div className={s.postsBlock}>
+            <h3>My posts</h3>
+
+            <div> <textarea></textarea> </div>
+                <div> <button>Add post</button>
             </div>
+
             <div className={s.posts}>
-                <Post message='Hi! How are you?' counter='25'/>
-                <Post message="It's my first post" counter='21'/>
+                <Post message={postData [0].message} likesCount={postData[0].likesCount} />
+                <Post message={postData [1].message} likesCount={postData[1].likesCount} />
+                <Post message={postData [2].message} likesCount={postData[2].likesCount} />
+
 
 
             </div>

@@ -1,20 +1,18 @@
 import React from 'react';
 import s from './Profile.module.css';
-import MyPosts from  "./MyPosts/MyPosts";
+import MyPosts from "./MyPosts/MyPosts";
+import ProfileInfo from "./ProfileInfo/ProfileInfo";
 
-        const Profile = () => {
-        return  (
-                <div>
+
+const Profile = () => {
+    return (
         <div>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMhWyuatgGG4Wkpd22xhVAiplG8bmptxYWLiG3nvkb0EvdM31HdQ&s"/>
+            <ProfileInfo/>
 
-        </div>
-        <div>
-        ava + description
-        </div>
-        <MyPosts />
-        </div>
-        )
-        };
 
-            export default Profile;
+            <MyPosts/>
+        </div>
+    )
+};
+
+export default Profile;
